@@ -1,4 +1,4 @@
-# Solver
+# Wordle Solver
 
 ## Background
 
