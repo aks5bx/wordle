@@ -6,9 +6,9 @@ Wordle is a game that took the world by storm in early 2022. The game is quite s
 
 <img src="https://github.com/aks5bx/wordle/blob/main/wordle.png" width="300" height="400"/>
 
-![alt text](https://github.com/aks5bx/wordle/blob/main/wordl.png)
+The rules to this game are quite simple. In fact, the Wordle website puts the rules quite succinctly, shown below:
 
-The rules to this game are quite simple. In fact, the Wordle website puts the rules quite succinctly, shown below. 
+<img src="https://github.com/aks5bx/wordle/blob/main/wordlerules.png" width="300" height="400"/>
 
 This repository contains my attempt at a data-driven solution to play Wordle! 
 
