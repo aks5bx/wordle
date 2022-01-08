@@ -4,7 +4,7 @@
 
 Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured in the New York Times (https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html). The game itself can be found at (https://www.powerlanguage.co.uk/wordle/). The board interface is shown below:
 
-![alt text](https://github.com/aks5bx/wordle/blob/main/wordle.png){:height="700px" width="400px"}
+![alt text](https://github.com/aks5bx/wordle/blob/main/wordle.png){:height="200px" width="50"}
 
 The rules to this game are quite simple. In fact, the Wordle website puts the rules quite succinctly, shown below. 
 
