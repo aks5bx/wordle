@@ -1,9 +1,10 @@
 # Wordle Solver
 
-## Background
+## Intro
 
 Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured in the New York Times (link below). The game itself can be found at (link below). This repository contains my attempt at a data-driven solution to play Wordle! 
 
+## Game Background
 The board interface is shown below:
 
 <p align="center">
