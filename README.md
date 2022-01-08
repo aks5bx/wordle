@@ -84,9 +84,9 @@ After trying this out for about a week or so, it seems that this program is able
 
 ### Lessons Learned 
 
-1. Contrary to some opinions on the internet, double lettering (the idea of using words that have repeat letters, like GORGE with a double G) is actually sometimes a good move (especially in cases where the letters are common letters like s, t, a, e, o, etc) because it increases the probability of getting a green tile. 
-2. Green tiles are huge - three green tiles gets you almost 99% of the way there to solving the word. I would say 1 green tile is worth roughly 2.5 yellow tiles just based off of my intuition. 
-3. Your starting word doesn’t matter that much! As long as it’s decent the starting word is actually not that big a deal, it’s mostly how you use the information (FWIW the program thinks the best first word is SORES - if you specify that the word does not end in 'S' the program likes SIREE)
+- Contrary to some opinions on the internet, double lettering (the idea of using words that have repeat letters, like GORGE with a double G) is actually sometimes a good move (especially in cases where the letters are common letters like s, t, a, e, o, etc) because it increases the probability of getting a green tile
+- Green tiles are huge - three green tiles gets you almost 99% of the way there to solving the word. I would say 1 green tile is worth roughly 2.5 yellow tiles just based off of my intuition
+- Your starting word doesn’t matter that much! As long as it’s decent the starting word is actually not that big a deal, it’s mostly how you use the information (FWIW the program thinks the best first word is SORES - if you specify that the word does not end in 'S' the program likes SIREE)
 
 ### Final Remarks 
 
@@ -95,5 +95,5 @@ I don’t think this program “solves” Wordle. I think humans are generally b
 
 ### Links
 
-New York Times Profile: https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html
-Game: https://www.powerlanguage.co.uk/wordle/)
+- New York Times Profile: https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html
+- Game: https://www.powerlanguage.co.uk/wordle/)
