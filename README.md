@@ -2,7 +2,7 @@
 
 ## Background
 
-Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured in the New York Times (https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html). The game itself can be found at (https://www.powerlanguage.co.uk/wordle/). This repository contains my attempt at a data-driven solution to play Wordle! 
+Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured in the New York Times (link below). The game itself can be found at (link below). This repository contains my attempt at a data-driven solution to play Wordle! 
 
 The board interface is shown below:
 
@@ -90,3 +90,9 @@ After trying this out for about a week or so, it seems that this program is able
 ### Final Remarks 
 
 I don’t think this program “solves” Wordle. I think humans are generally better than this program (though a better program could change that) because Wordle is a human game by humans for humans. Given that the creator is a human who chooses human words, we have an advantage because we guess words that other humans know and use. I think the program gives interesting insights into the game though, but the mystery, in my opinion is still alive. 
+
+
+### Links
+
+New York Times Profile: https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html
+Game: https://www.powerlanguage.co.uk/wordle/)
