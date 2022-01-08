@@ -26,6 +26,7 @@ The program is fed two datasets. One is a dataset of around 250,000 scrabble wor
 
 This project required a fair amout of pre-processing in order to function. In fact, most of this project involves manipulating the data to get to a point where we could drive high-quality recommendations. To start off, I had a table of 250,000 words that had the following structure: 
 
+<p align="center">
 Index | Word |
 --- | ---
 0 | ALPHA 
@@ -33,17 +34,21 @@ Index | Word |
 2 | GAMMA
 3 | LAMBDA
 4 | SIGMA
+</p>
 
 However, to make this dataset more usable, I had to make some modifications. I threw out any words that were not five letters long (the Wordle word is always 5 letters long) and also created a new field for each individual letter. The result of these modifications took this structure: 
 
+<p align="center">
 Index | Word | 1 | 2 | 3 | 4 | 5 |
 --- | --- | --- | --- | --- | --- | ---
 0 | ALPHA | A | L | P | H | A 
 2 | GAMMA | G | A | M | M | A
 4 | SIGMA | S | I | G | M | A
+</p>
 
 Next, I utilized the CROSS-JOIN table join (or cartesian join) to create a new dataframe that had the following structure: 
 
+<p align="center">
 Index | Word_X | x1 | x2 | x3 | x4 | x5 | Word_Y | y1 | y2 | y3 | y4 | y5 |
 --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | ---
 0 | ALPHA | A | L | P | H | A | GAMMA | G | A | M | M | A
@@ -52,6 +57,7 @@ Index | Word_X | x1 | x2 | x3 | x4 | x5 | Word_Y | y1 | y2 | y3 | y4 | y5 |
 3 | GAMMA | G | A | M | M | A | SIGMA | S | I | G | M | A 
 4 | SIGMA | S | I | G | M | A | ALPHA | A | L | P | H | A 
 5 | SIGMA | S | I | G | M | A | GAMMA | G | A | M | M | A
+</p>
 
 With this structure, I was able to simulate a guess for the Wordle game. For example, index 0 represents guessing the word "alpha" when the mystery Wordle word was actually "gamma." From here, I was able to gather the yellow tiles, grey tiles, and green tiles that would have resulted from such a guess. In the example of guessing "alpha" for the mystery word "gamma" we would have a yellow tile in position 1, a grey tile in position 2, a grey tile in position 3, a grey tile in position 4, and a green tile in position 5. 
 
