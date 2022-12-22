@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured in the New York Times (link below). The game itself can be found at (link below). This repository contains my attempt at a data-driven solution to play Wordle! 
+Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured, and later added to, the New York Times. The game itself can be found online [here](https://www.nytimes.com/games/wordle/index.html). This repository contains my attempt at a data-driven solution to play Wordle! 
 
 ### Files 
 
@@ -20,7 +20,7 @@ The board interface is shown below:
 The rules to this game are quite simple. In fact, the Wordle website puts the rules quite succinctly, shown below:
 
 <p align="center">
-<img src="https://github.com/aks5bx/wordle/blob/main/wordlerules.png" width="500" height="400"/>
+<img src="https://github.com/aks5bx/wordle/blob/main/wordlerules.png" width="350" height="400"/>
 </p>
 
 ## How the Program Works 
@@ -103,7 +103,7 @@ After trying this out for about a week or so, it seems that this program is able
 
 The program is especially effective when unsual letters (v, j, etc) are introduced because this allows the program to significantly reduce the number of words it needs to consider. 
 
-The program tends to struggle when unusual words with fairly common letters are the target word (this is not a five letter word, but an example of such a word could be "LYME" - with four reasonably common letters but an overall word that is not as common). 
+The program tends to struggle when unusual words with fairly common letters are the target word (this is not a five letter word, but an example of such a word could be _LYME_ with four reasonably common letters but an overall word that is not as common). 
 
 ### Lessons Learned 
 
@@ -113,12 +113,14 @@ The program tends to struggle when unusual words with fairly common letters are 
 
 ### Final Remarks 
 
-There are plenty of ways to make this programmatically more efficient. Notably, instead of trying to optimize some sort of point value determined by green and yellow tiles, one could train a model to guess many different target words to more accurately compute a generalizable and optimal optimization. I suspect that training a simple recurrent neural network with a BERT-based tokenizer and a loss function that minimizes the number of guesses would be quite effective. The key here is that instead of trying to maximize the probability of each guess being the correct target word, we would simply try to minimize the expected value of number of guesses. So, we could have a second guess that has a 0 probability of being the target word. But, that second guess could hypothetically set up a third guess with a 99% probability of being the target word. To contrast, the current method would not allow for such a second guess and instead it would prioritize a series of guesses where the probability of being the target word went, say, 20% --> 30% over the aforementioned 0% --> 99% (even though the probability of success after three guesses favors the 0 --> 99 approach).  
+There are plenty of ways to make this programmatically more efficient. Notably, instead of trying to optimize some sort of point value determined by green and yellow tiles, one could train a model to guess many different target words to more accurately compute a generalizable and optimal optimization. I suspect that training a simple recurrent neural network with a BERT-based tokenizer and a loss function that minimizes the number of guesses would be quite effective. 
+
+The key here is that instead of trying to maximize the probability of each guess being the correct target word, we would simply try to minimize the expected value of number of guesses. So, we could have a second guess that has a 0 probability of being the target word. But, that second guess could hypothetically set up a third guess with a 99% probability of being the target word. To contrast, the current method would not allow for such a second guess and instead it would prioritize a series of guesses where the probability of being the target word went, say, 20% --> 30% over the aforementioned 0% --> 99% (even though the probability of success after three guesses favors the 0 --> 99 approach).  
 
 I don’t think this program “solves” Wordle. I think humans are generally better than this program (though a better program could change that) because Wordle is a human game by humans for humans. Given that the creator is a human who chooses human words, we have an advantage because we guess words that other humans know and use. I think the program gives interesting insights into the game though, but the mystery, in my opinion is still alive. 
 
 
-### Links
+## Links
 
 - New York Times Profile: https://www.nytimes.com/2022/01/03/technology/wordle-word-game-creator.html
-- Game: https://www.powerlanguage.co.uk/wordle/)
+- Game: https://www.powerlanguage.co.uk/wordle/
