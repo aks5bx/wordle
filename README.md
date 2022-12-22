@@ -4,9 +4,10 @@
 
 Wordle is a game that took the world by storm in early 2022. The game is quite simple, and was featured in the New York Times (link below). The game itself can be found at (link below). This repository contains my attempt at a data-driven solution to play Wordle! 
 
-FILES
+### Files 
+
 - Python Code: wordle.py
-- Scrabble Dictioary: scrabble_dictionary.txt
+- Scrabble Dictionary: scrabble_dictionary.txt
 - Word Frequency Data: word_freq.json
 
 ## Game Background
