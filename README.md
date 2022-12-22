@@ -6,9 +6,9 @@ Wordle is a game that took the world by storm in early 2022. The game is quite s
 
 ### Files 
 
-- Python Code: wordle.py
-- Scrabble Dictionary: scrabble_dictionary.txt
-- Word Frequency Data: word_freq.json
+- Python Code: `wordle.py`
+- Scrabble Dictionary: `scrabble_dictionary.txt`
+- Word Frequency Data: `word_freq.json`
 
 ## Game Background
 The board interface is shown below:
