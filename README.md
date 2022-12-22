@@ -20,7 +20,7 @@ The board interface is shown below:
 The rules to this game are quite simple. In fact, the Wordle website puts the rules quite succinctly, shown below:
 
 <p align="center">
-<img src="https://github.com/aks5bx/wordle/blob/main/wordlerules.png" width="500" height="600"/>
+<img src="https://github.com/aks5bx/wordle/blob/main/wordlerules.png" width="550" height="600"/>
 </p>
 
 ## How the Program Works 
